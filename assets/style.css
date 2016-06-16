@@ -1,0 +1,51 @@
+
+body {
+  /*max-width: 700px;
+  margin: 0 auto;*/
+  background: lightgrey;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container{
+  width: 660px;
+  //width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.row{
+  width: 100%;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  //background-color: red;
+}
+
+.fancybox-div{
+  width: auto;
+  height: auto;
+  border: 5px solid white;
+}
+
+.fancybox-div:hover{
+  //background-color: green;
+  //z-index: 12000;
+}
+
+.text{
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  padding: 5px 0 1px 0;
+}
+
+
+/* Fancybox */
+.fancybox-custom .fancybox-skin {
+  box-shadow: 0 0 50px #222;
+}
+.hidden{
+  display: none;
+}
