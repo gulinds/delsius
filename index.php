@@ -1,10 +1,10 @@
 <?php require 'function.php' ?>
 <!DOCTYPE html>
-<html>
+<html lang="sv-se">
   <head>
     <meta charset="utf-8">
     <title>Delsius</title>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,700,400|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto|Ubuntu|Raleway|Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/style.css" media="screen" title="no title" charset="utf-8">
     <!-- Add jQuery library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -270,10 +270,10 @@
   <div class="container">
     <!-- -->
     <p>
-      <h1><b>Fancybox Gallery</b></h1>
+      <h1>Fancybox Gallery</h1>
     </p>
     <?php
-      $result = get_result("SELECT photo,textbody,bygg_id,headline,state FROM album /* FIXA SÅ DEN HÄMTAR ALLA TABELLER */ ");
+      $result = get_result("SELECT photo,textbody,bygg_id,headline,state FROM album ");
       //print_r($result);
         while($row = $result->fetch_assoc()){
           if ($row['state'] == 1) {
@@ -291,7 +291,7 @@
   <?php }else {?>
 
           <div class="hidden">
-            <a class="fancybox-thumbs" data-fancybox-group="<?php echo $row['bygg_id']; ?>" href="<?php echo $row['photo']; ?>" ><img src="<?php echo $row['photo']; ?>" style="width:200px;"  title="<?php echo $row['title']; ?>" alt="" /></a>
+            <a class="fancybox-thumbs" data-fancybox-group="<?php echo $row['bygg_id']; ?>" href="<?php echo $row['photo']; ?>" title="<h2><b><?php echo $row['headline'];?></b></h2> <?php echo $row['textbody'];?>" ><img src="<?php echo $row['photo']; ?>" style="width:200px;"  title="<?php echo $row['title']; ?>" alt="" /></a>
           </div>
   <?php }} ?>
     <!-- -->

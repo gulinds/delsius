@@ -42,10 +42,9 @@ function get_row($query){
 
 }
 
-function update($query){
-  echo "yeeeeehaaa";
-  global $mysqli;
-
-  $mysqli->query($query);
-  return 'ok';
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
 }

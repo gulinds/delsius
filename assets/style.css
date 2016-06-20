@@ -2,17 +2,28 @@
 body {
   /*max-width: 700px;
   margin: 0 auto;*/
-  background: lightgrey;
-  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: linear-gradient(to right, #bf7a6b 0%, #e6d8a7 100%);
+  //font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open sans', sans-serif;
 }
 
+h1{
+  font-family: 'raleway', sans-serif;
+  font-weight: lighter;
+}
+#success{
+  width: 300px;
+  font-family: 'ubuntu';
+  font-size: 20px;
+  margin: 0 auto;
+  color: green;
+  padding-top: 10px;
+}
 .container{
-  width: 660px;
-  //width: 420px;
+  width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .row{
   width: 100%;
@@ -41,6 +52,59 @@ body {
   padding: 5px 0 1px 0;
 }
 
+.laggtill, .tabort{
+  width: 40%;
+  text-align: center;
+  border: 3px solid white;
+  padding-bottom: 20px;
+}
+
+.input{
+  height: 40px;
+  margin-bottom: 10px;
+}
+label{
+  color: red;
+  margin-left: 10px;
+  margin: 0 auto;
+}
+.btn{
+  background-color: rgba(232,232,232,0);
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  width: 150px;
+  height: 50px;
+  //border-radius: 5px;
+  font-size: 17px;
+  color: white;
+  border: 2px solid white;
+  box-shadow: none;
+  margin-left: 100px;
+}
+
+.btn:hover{
+  background-color: rgba(232,232,232,0.3);
+  font-size: 17.3px;
+}
+
+.contact_form{
+  width: 400px;
+  height: 620px;
+  background-color: rgba(245,245,245,0.2);
+  padding-left: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.file {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#header,#txt{
+  color: #000;
+}
 
 /* Fancybox */
 .fancybox-custom .fancybox-skin {
